@@ -18,8 +18,7 @@ def choice_selector():
     print(num1, "*", num2, "=", mult(num1, num2))
   elif choice == "4":
     print(num1, "/", num2, "=", div(num1, num2))
-  elif choice == "EXIT":
-    exit()
+  
 
 
 #To not repeat the choice selection, establish the choice as '1' to bypss first while loop#
@@ -34,6 +33,7 @@ while choice != ('1','2','3','4'):
     
       
     choice_selector()
-  
+  elif choice == "EXIT":
+    exit()
   else:
     print("Selection Error. Try again.")
